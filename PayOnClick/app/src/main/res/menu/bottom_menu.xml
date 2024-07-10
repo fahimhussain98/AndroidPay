@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/home"
+        android:title="Home"
+        android:icon="@drawable/baseline_home_24"/>
+
+    <item
+        android:id="@+id/wallet"
+        android:title="wallet"
+        android:icon="@drawable/baseline_account_balance_wallet_24"/>
+
+   <!-- <item
+        android:title=""/>-->
+
+    <item
+        android:id="@+id/report"
+        android:title="Report"
+
+        android:icon="@drawable/baseline_insert_drive_file_24"/>
+
+    <item
+        android:id="@+id/service"
+        android:title="service"
+        android:icon="@drawable/baseline_headphones_24"/>
+</menu>

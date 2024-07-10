@@ -1,0 +1,893 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="REPORTS"
+            android:textSize="30dp"
+            android:textColor="@color/black"
+            android:gravity="center"/>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:id="@+id/recharge_report"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:background="@drawable/report_bg"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:orientation="horizontal"
+                    android:layout_gravity="center"
+                    android:layout_height="wrap_content">
+
+
+                    <ImageView
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:background="@drawable/circle"
+                        android:src="@drawable/phone"
+                        android:layout_marginStart="10dp"
+                        android:padding="10dp"
+                        app:tint="@color/white"/>
+
+                    <TextView
+                        android:layout_weight="1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Recharge Report"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:textColor="@color/black"
+                        android:textSize="18sp"
+                        android:textStyle="bold"/>
+
+                    <ImageView
+                        android:layout_weight=".4"
+                        android:layout_width="30dp"
+                        android:layout_gravity="center"
+                        android:layout_height="30dp"
+                        android:src="@drawable/arrow_forward"/>
+
+
+
+
+
+                </LinearLayout>
+
+
+
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/bbps_report"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/report_bg"
+                app:layout_constraintTop_toBottomOf="@id/recharge_report"                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:orientation="horizontal"
+                    android:layout_gravity="center"
+                    android:layout_height="wrap_content">
+
+
+                    <ImageView
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:background="@drawable/circle"
+                        android:src="@drawable/bulb"
+                        android:layout_marginStart="10dp"
+                        android:padding="10dp"
+                        app:tint="@color/white"/>
+
+                    <TextView
+                        android:layout_weight="1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="BBPS Report"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:textColor="@color/black"
+                        android:textSize="18sp"
+                        android:textStyle="bold"/>
+
+                    <ImageView
+                        android:layout_weight=".4"
+                        android:layout_width="30dp"
+                        android:layout_gravity="center"
+                        android:layout_height="30dp"
+                        android:src="@drawable/arrow_forward"/>
+
+
+
+
+
+                </LinearLayout>
+
+
+
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/aeps_report"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/report_bg"
+                app:layout_constraintTop_toBottomOf="@id/bbps_report"                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:orientation="horizontal"
+                    android:layout_gravity="center"
+                    android:layout_height="wrap_content">
+
+
+                    <ImageView
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:background="@drawable/circle"
+                        android:src="@drawable/finger"
+                        android:layout_marginStart="10dp"
+                        android:padding="10dp"
+                        app:tint="@color/white"/>
+
+                    <TextView
+                        android:layout_weight="1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="AePS Report"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:textColor="@color/black"
+                        android:textSize="18sp"
+                        android:textStyle="bold"/>
+
+                    <ImageView
+                        android:layout_weight=".4"
+                        android:layout_width="30dp"
+                        android:layout_gravity="center"
+                        android:layout_height="30dp"
+                        android:src="@drawable/arrow_forward"/>
+
+
+
+
+
+                </LinearLayout>
+
+
+
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/payout_report"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/report_bg"
+                app:layout_constraintTop_toBottomOf="@id/aeps_report"                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:orientation="horizontal"
+                    android:layout_gravity="center"
+                    android:layout_height="wrap_content">
+
+
+                    <ImageView
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:background="@drawable/circle"
+                        android:src="@drawable/hand"
+                        android:layout_marginStart="10dp"
+                        android:padding="10dp"
+                        app:tint="@color/white"/>
+
+                    <TextView
+                        android:layout_weight="1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Payout Report"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:textColor="@color/black"
+                        android:textSize="18sp"
+                        android:textStyle="bold"/>
+
+                    <ImageView
+                        android:layout_weight=".4"
+                        android:layout_width="30dp"
+                        android:layout_gravity="center"
+                        android:layout_height="30dp"
+                        android:src="@drawable/arrow_forward"/>
+
+
+
+
+
+                </LinearLayout>
+
+
+
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/dmt_report"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/report_bg"
+                app:layout_constraintTop_toBottomOf="@id/payout_report"                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:orientation="horizontal"
+                    android:layout_gravity="center"
+                    android:layout_height="wrap_content">
+
+
+                    <ImageView
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:background="@drawable/circle"
+                        android:src="@drawable/transfer"
+                        android:layout_marginStart="10dp"
+                        android:padding="10dp"
+                        app:tint="@color/white"/>
+
+                    <TextView
+                        android:layout_weight="1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="DMT Report"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:textColor="@color/black"
+                        android:textSize="18sp"
+                        android:textStyle="bold"/>
+
+                    <ImageView
+                        android:layout_weight=".4"
+                        android:layout_width="30dp"
+                        android:layout_gravity="center"
+                        android:layout_height="30dp"
+                        android:src="@drawable/arrow_forward"/>
+
+
+
+
+
+                </LinearLayout>
+
+
+
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/exp_dmt_report"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/report_bg"
+                app:layout_constraintTop_toBottomOf="@id/dmt_report"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:orientation="horizontal"
+                    android:layout_gravity="center"
+                    android:layout_height="wrap_content">
+
+
+                    <ImageView
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:background="@drawable/circle"
+                        android:src="@drawable/tarnsfer2"
+                        android:layout_marginStart="10dp"
+                        android:padding="10dp"
+                        app:tint="@color/white"/>
+
+                    <TextView
+                        android:layout_weight="1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Exp DMT Report"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:textColor="@color/black"
+                        android:textSize="18sp"
+                        android:textStyle="bold"/>
+
+                    <ImageView
+                        android:layout_weight=".4"
+                        android:layout_width="30dp"
+                        android:layout_gravity="center"
+                        android:layout_height="30dp"
+                        android:src="@drawable/arrow_forward"/>
+
+
+
+
+
+                </LinearLayout>
+
+
+
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/add_money_report"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/report_bg"
+                app:layout_constraintTop_toBottomOf="@id/exp_dmt_report"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:orientation="horizontal"
+                    android:layout_gravity="center"
+                    android:layout_height="wrap_content">
+
+
+                    <ImageView
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:background="@drawable/circle"
+                        android:src="@drawable/wallet"
+                        android:layout_marginStart="10dp"
+                        android:padding="10dp"
+                        app:tint="@color/white"/>
+
+                    <TextView
+                        android:layout_weight="1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Add Money Report"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:textColor="@color/black"
+                        android:textSize="18sp"
+                        android:textStyle="bold"/>
+
+                    <ImageView
+                        android:layout_weight=".4"
+                        android:layout_width="30dp"
+                        android:layout_gravity="center"
+                        android:layout_height="30dp"
+                        android:src="@drawable/arrow_forward"/>
+
+
+
+
+
+                </LinearLayout>
+
+
+
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/NSDL_PANCARD_report"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/report_bg"
+                app:layout_constraintTop_toBottomOf="@id/add_money_report"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:orientation="horizontal"
+                    android:layout_gravity="center"
+                    android:layout_height="wrap_content">
+
+
+                    <ImageView
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:background="@drawable/circle"
+                        android:src="@drawable/card "
+                        android:layout_marginStart="10dp"
+                        android:padding="10dp"
+                        app:tint="@color/white"/>
+
+                    <TextView
+                        android:layout_weight="1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Add Money Report"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:textColor="@color/black"
+                        android:textSize="18sp"
+                        android:textStyle="bold"/>
+
+                    <ImageView
+                        android:layout_weight=".4"
+                        android:layout_width="30dp"
+                        android:layout_gravity="center"
+                        android:layout_height="30dp"
+                        android:src="@drawable/arrow_forward"/>
+
+
+
+
+
+                </LinearLayout>
+
+
+
+
+
+            </LinearLayout>
+
+
+
+
+
+
+
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+      <!--  <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="14dp"
+            android:layout_marginRight="14dp"
+            app:cardElevation="8dp"
+            app:cardBackgroundColor="@android:color/transparent"
+            app:cardCornerRadius="1dp"
+            app:cardUseCompatPadding="true">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@android:color/transparent"
+                android:orientation="vertical">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/transparent"
+                    android:elevation="0dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/for_wallet_bg"
+                        android:elevation="0dp"
+                        tools:ignore="MissingConstraints">
+
+                        <ImageView
+                            android:id="@+id/w_s_phon_i"
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:background="@drawable/circle"
+                            android:src="@drawable/phone"
+                            android:padding="12dp"
+                            app:tint="@color/white"
+                            />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:id="@+id/rech_test"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Rechage Report"
+                                android:drawableRight="@drawable/arrow_forward"
+                                android:gravity="center_horizontal"
+                                android:textColor="@color/black"
+                                android:textSize="14dp"
+                                app:layout_constraintStart_toEndOf="@id/w_s_phon_i" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/transparent"
+                    android:layout_marginTop="10dp"
+                    android:elevation="0dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/for_wallet_bg"
+                        android:elevation="0dp"
+                        tools:ignore="MissingConstraints">
+
+                        <ImageView
+                            android:id="@+id/r_s_bulb_I"
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:background="@drawable/circle"
+                            android:src="@drawable/bulb"
+                            android:padding="12dp"
+                            app:tint="@color/white" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:id="@+id/bbps_test"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="BBPS Report"
+                                android:drawableRight="@drawable/arrow_forward"
+                                android:gravity="center_horizontal"
+                                android:textColor="@color/black"
+                                android:textSize="14dp"
+                                app:layout_constraintStart_toEndOf="@id/r_s_bulb_I" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:background="@android:color/transparent"
+                    android:elevation="0dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/for_wallet_bg"
+                        android:elevation="0dp"
+                        tools:ignore="MissingConstraints">
+
+                        <ImageView
+                            android:id="@+id/r_s_fing_I"
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:background="@drawable/circle"
+                            android:src="@drawable/finger"
+                            android:padding="12dp"
+                            app:tint="@color/white" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:id="@+id/aeps_test"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Aeps Report"
+                                android:drawableRight="@drawable/arrow_forward"
+                                android:gravity="center_horizontal"
+                                android:textColor="@color/black"
+                                android:textSize="14dp"
+                                app:layout_constraintStart_toEndOf="@id/r_s_fing_I" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/transparent"
+                    android:layout_marginTop="10dp"
+                    android:elevation="0dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/for_wallet_bg"
+                        android:elevation="0dp"
+                        tools:ignore="MissingConstraints">
+
+                        <ImageView
+                            android:id="@+id/r_s_hand_I"
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:background="@drawable/circle"
+                            android:src="@drawable/hand"
+                            android:padding="12dp"
+                            app:tint="@color/white" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:id="@+id/payout_test"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Payout Report"
+                                android:drawableRight="@drawable/arrow_forward"
+                                android:gravity="center_horizontal"
+                                android:textColor="@color/black"
+                                android:textSize="14dp"
+                                app:layout_constraintStart_toEndOf="@id/r_s_hand_I" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:background="@android:color/transparent"
+                    android:elevation="0dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/for_wallet_bg"
+                        android:elevation="0dp"
+                        tools:ignore="MissingConstraints">
+
+                        <ImageView
+                            android:id="@+id/r_s_transfer_I"
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:background="@drawable/circle"
+                            android:src="@drawable/transfer"
+                            android:padding="12dp"
+                            app:tint="@color/white" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:id="@+id/dmt_test"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="DMT Report"
+                                android:drawableRight="@drawable/arrow_forward"
+                                android:gravity="center_horizontal"
+                                android:textColor="@color/black"
+                                android:textSize="14dp"
+                                app:layout_constraintStart_toEndOf="@id/r_s_transfer_I" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/transparent"
+                    android:layout_marginTop="10dp"
+
+                    android:elevation="0dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/for_wallet_bg"
+                        android:elevation="0dp"
+                        tools:ignore="MissingConstraints">
+
+                        <ImageView
+                            android:id="@+id/r_s_transfer2_I"
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:background="@drawable/circle"
+                            android:src="@drawable/transfer"
+                            android:padding="12dp"
+                            app:tint="@color/white" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:id="@+id/Exp_dmt_test"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Exp DMT Report"
+                                android:drawableRight="@drawable/arrow_forward"
+                                android:gravity="center_horizontal"
+                                android:textColor="@color/black"
+                                android:textSize="14dp"
+                                app:layout_constraintStart_toEndOf="@id/r_s_transfer2_I" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/transparent"
+                    android:layout_marginTop="10dp"
+
+                    android:elevation="0dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/for_wallet_bg"
+                        android:elevation="0dp"
+                        tools:ignore="MissingConstraints">
+
+                        <ImageView
+                            android:id="@+id/r_s_wallet_I"
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:background="@drawable/circle"
+                            android:src="@drawable/wallet"
+                            android:padding="12dp"
+                            app:tint="@color/white" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:id="@+id/wallet_test"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Add Money Report"
+                                android:drawableRight="@drawable/arrow_forward"
+                                android:gravity="center_horizontal"
+                                android:textColor="@color/black"
+                                android:textSize="14dp"
+                                app:layout_constraintStart_toEndOf="@id/r_s_wallet_I" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/transparent"
+
+                    android:layout_marginTop="10dp"
+
+                    android:elevation="0dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/for_wallet_bg"
+                        android:elevation="0dp"
+                        tools:ignore="MissingConstraints">
+
+                        <ImageView
+                            android:id="@+id/r_s_NSDL_I"
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:background="@drawable/circle"
+                            android:src="@drawable/card2"
+                            android:padding="12dp"
+                            app:tint="@color/white" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:id="@+id/NSDL_pancard_test"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="NSDL PANCARD Report"
+                                android:drawableRight="@drawable/arrow_forward"
+                                android:gravity="center_horizontal"
+                                android:textColor="@color/black"
+                                android:textSize="14dp"
+                                app:layout_constraintStart_toEndOf="@id/r_s_NSDL_I" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+
+
+
+            </LinearLayout>
+
+
+
+
+
+
+        </androidx.cardview.widget.CardView>-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+

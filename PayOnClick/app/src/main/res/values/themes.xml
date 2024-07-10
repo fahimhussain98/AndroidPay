@@ -1,0 +1,53 @@
+<!--
+<resources xmlns:tools="http://schemas.android.com/tools">
+    &lt;!&ndash; Base application theme. &ndash;&gt;
+    <style name="Base.Theme.PayOnClick" parent="Theme.MaterialComponents.dayNight.noActionBar">
+        &lt;!&ndash; Customize your light theme here. &ndash;&gt;
+        &lt;!&ndash; <item name="colorPrimary">@color/my_light_primary</item> &ndash;&gt;
+    </style>
+
+    <style name="Theme.PayOnClick" parent="Base.Theme.PayOnClick" />
+</resources>-->
+
+
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+<!--    <style name="Theme.PayOnClick" parent="Theme.AppCompat.Light.NoActionBar">-->
+    <style name="Theme.PayOnClick" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+
+    <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/lavender</item>
+        <item name="colorPrimaryVariant">@color/lavender</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/teal_200</item>
+        <item name="colorSecondaryVariant">@color/teal_700</item>
+<!--        <item name="colorOnSecondary">@color/black</item>-->
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor">?attr/colorPrimaryVariant</item>
+        <!-- Customize your theme here. -->
+    </style>
+    <style name="DialogAnimation">
+        <item name="android:windowEnterAnimation">@anim/slide_in</item>
+        <item name="android:windowExitAnimation">@anim/slide_out</item>
+
+    </style>
+
+
+    ////////////////////////////////////
+
+
+    <style name="DialogTheme" parent="Theme.AppCompat.Light.Dialog">
+        <!-- Customize your theme here. -->
+        <item name="android:windowBackground">@null</item>
+
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">true</item>
+    </style>
+
+    <style name="SlidingNavDialog">
+        <item name="android:windowEnterAnimation">@anim/k_theam2</item>
+        <item name="android:windowExitAnimation">@anim/k_theme</item>
+    </style>
+
+</resources>

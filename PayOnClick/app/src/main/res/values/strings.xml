@@ -1,0 +1,44 @@
+<resources>
+  <!--  app_name-->
+    <string name="PayOnClick">PayOnClick</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello home fragment</string>
+    <string name="hello_wallet_fragment">Hello wallet fragment</string>
+    <string name="hello_report_fragment">Hello report fragment</string>
+    <string name="hello_histroy_fragment">Hello service fragment</string>
+
+
+    <string name="open_nav">Open Navigation</string>
+    <string name="close_nav">Close Navigation</string>
+
+
+  <string name="hom_line">Hello  Welcome to PayOnClick</string>
+  <string name="Recharge">Recharge</string>
+  <string name="MobileRechage">MobileRecharge</string>
+  <string name="DthRecharge">Dth Recharge</string>
+  <string name="postPaidRechage">Postpaid Recharge</string>
+
+  <string name="Billpayment">Bill Payment</string>
+  <string name="Electricity">Electricity</string>
+  <string name="lpg_gass">LPG GASS</string>
+  <string name="loanTransfer">Loan Transfer</string>
+
+  <string name="Insurance">Insurance</string>
+  <string name="CreditCard">Credit Card</string>
+  <string name="FastTag">FastTag</string>
+  <string name="water">water</string>
+
+  <string name="Banking">Banking</string>
+  <string name="MATM">MATM</string>
+  <string name="Aeps">AEPS</string>
+  <string name="PAYOUT">PAYOUT</string>
+  <string name="MoneyTransfer">MoneyTransfer</string>
+  <string name="cms">CMS</string>
+
+
+  <string name="PanCard">Pan Card</string>
+  <string name="nsdl">NSDL</string>
+  <string name="UTI">UTI</string>
+
+
+</resources>
