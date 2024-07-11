@@ -2,6 +2,8 @@ package com.hussain.payonclick;
 
 import android.annotation.SuppressLint;
 import android.app.Dialog;
+import android.content.Intent;
+import android.content.SharedPreferences;
 import android.graphics.Color;
 import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
@@ -26,6 +28,7 @@ import androidx.fragment.app.FragmentTransaction;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import com.google.android.material.navigation.NavigationView;
+import com.hussain.payonclick.Acitivity.login;
 import com.hussain.payonclick.fragment.histroy;
 import com.hussain.payonclick.fragment.homeFragment;
 import com.hussain.payonclick.fragment.report;
@@ -46,6 +49,7 @@ public class MainActivity extends AppCompatActivity {
         bottomNavigationView = findViewById(R.id.bottomNavigationView);
         fab = findViewById(R.id.fab);
         drawerLayout = findViewById(R.id.drawer_layout);
+
         NavigationView navigationView = findViewById(R.id.nav_view);
 
         Toolbar toolbar = findViewById(R.id.toolbar);
@@ -81,6 +85,9 @@ public class MainActivity extends AppCompatActivity {
 
 
        // fab.setOnClickListener(view -> showBottomDialog());
+
+        //check user exitance
+       // checkuserexitence();
     }
 
     private void replaceFragment(Fragment fragment) {
@@ -123,4 +130,15 @@ public class MainActivity extends AppCompatActivity {
         dialog.getWindow().getAttributes().windowAnimations = R.style.DialogAnimation;
         dialog.getWindow().setGravity(Gravity.BOTTOM);
     }
+
+    //here is the mothde for the user already is alvailable or not
+//    public void checkuserexitence(){
+//        SharedPreferences sp = getSharedPreferences("credentials",MODE_PRIVATE);
+//        if (sp.contains("userId"))
+//            Toast.makeText(MainActivity.this, "user already availble hai", Toast.LENGTH_SHORT).show();
+//
+//        else
+//            startActivity(new Intent(getApplicationContext(), login.class));
+//
+//    }
 }
